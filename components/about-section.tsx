@@ -6,10 +6,10 @@ export default function AboutSection() {
   return (
     <section id="about-us" className="py-10 bg-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold  mb-6">
+        <h2 className="text-4xl text-gray-900 font-bold  mb-6">
           Highly effective Digital Marketing Experts
         </h2>
-        <p className="text-lg max-w-3xl  mb-10">
+        <p className="text-lg max-w-3xl text-gray-900 mb-10">
           With over 1.2 million hours of expertise and a team of 35 dedicated
           professionals, we bring a wealth of knowledge and creativity to every
           project. Our diverse team of specialists ensures that no matter the
@@ -21,7 +21,7 @@ export default function AboutSection() {
             variant="outline"
             className="rounded-full  flex gap-12 bg-gray-200 hover:bg-gray-300"
           >
-            <span className="font-bold">About Us</span>
+            <span className="font-bold text-gray-900">About Us</span>
             <div className="bg-[#1A2238] rounded-full p-3">
               <ArrowRight className="h-full w-6 text-white" />
             </div>
