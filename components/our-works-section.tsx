@@ -50,7 +50,7 @@ const projects = [
 
 export default function OurWorksSection() {
   return (
-    <section id="our-works" className="py-20 bg-white">
+    <section id="our-works" className="py-20 text-neutral-900 bg-white">
       <div className="container mx-auto px-6">
         <h2 className="text-2xl font-bold mb-6">Our Works</h2>
 

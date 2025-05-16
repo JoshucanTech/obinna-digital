@@ -1,10 +1,15 @@
-import { Phone, Mail, MapPin } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Phone, Mail, MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function ContactSection() {
   return (
-    <section id="contact-us" className="py-20 bg-white">
+    <section id="contact-us" className="py-20 bg-white text-neutral-900">
       <div className="container mx-auto px-6">
         <h2 className="text-2xl font-bold mb-10">Contact Us</h2>
 
@@ -37,7 +42,9 @@ export default function ContactSection() {
             </div>
             <div>
               <h3 className="font-semibold mb-1">Address</h3>
-              <p className="text-sm text-gray-600">Sector 2 Street, Wuse Zone</p>
+              <p className="text-sm text-gray-600">
+                Sector 2 Street, Wuse Zone
+              </p>
               <p className="text-sm text-gray-600">5, Abuja Nigeria</p>
             </div>
           </div>
@@ -47,7 +54,10 @@ export default function ContactSection() {
           <div className="bg-gray-300 rounded-md p-6">
             <form>
               <div className="mb-4">
-                <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-1">
+                <label
+                  htmlFor="fullName"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
                   Enter Full Name
                 </label>
                 <input
@@ -59,7 +69,10 @@ export default function ContactSection() {
               </div>
 
               <div className="mb-4">
-                <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700 mb-1">
+                <label
+                  htmlFor="phoneNumber"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
                   Enter Phone Number
                 </label>
                 <input
@@ -71,7 +84,10 @@ export default function ContactSection() {
               </div>
 
               <div className="mb-4">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
                   Enter Email
                 </label>
                 <input
@@ -83,7 +99,10 @@ export default function ContactSection() {
               </div>
 
               <div className="mb-4">
-                <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
+                <label
+                  htmlFor="description"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
                   Description
                 </label>
                 <textarea
@@ -94,7 +113,10 @@ export default function ContactSection() {
                 ></textarea>
               </div>
 
-              <Button type="submit" className="bg-gray-400 text-black hover:bg-gray-500">
+              <Button
+                type="submit"
+                className="bg-gray-400 text-black hover:bg-gray-500"
+              >
                 Send
               </Button>
             </form>
@@ -106,14 +128,19 @@ export default function ContactSection() {
 
             <Accordion type="single" collapsible className="w-full">
               {[1, 2, 3, 4].map((item) => (
-                <AccordionItem key={item} value={`item-${item}`} className="border-b border-gray-200 py-2">
+                <AccordionItem
+                  key={item}
+                  value={`item-${item}`}
+                  className="border-b border-gray-200 py-2"
+                >
                   <AccordionTrigger className="flex justify-between items-center w-full text-left font-normal">
                     What does Tradehall do?
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="py-2 text-gray-600">
-                      Tradehall provides comprehensive digital marketing solutions to help businesses grow their online
-                      presence and connect with customers.
+                      Tradehall provides comprehensive digital marketing
+                      solutions to help businesses grow their online presence
+                      and connect with customers.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -123,5 +150,5 @@ export default function ContactSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
