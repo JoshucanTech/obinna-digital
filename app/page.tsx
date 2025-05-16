@@ -17,12 +17,11 @@ export default function Home() {
         <AboutSection />
         <PricingSection />
 
-        {/* <OurWorksSection /> */}
-        <section id="work-with-us" className="py-20">
-          {/* Work with us section content will go here */}
-        </section>
-        {/* <TestimonialsSection />
-        <ContactSection />*/}
+        <OurWorksSection />
+        {/* <section id="work-with-us" className="py-20">
+        </section> */}
+        <TestimonialsSection />
+        <ContactSection />
         <FooterSection />
       </main>
     </ThemeProvider>

@@ -1,7 +1,7 @@
-import Image from "next/image"
-import { ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Star, Heart } from "lucide-react"
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Star, Heart } from "lucide-react";
 
 // Testimonial data to match the image exactly
 const testimonials = [
@@ -16,7 +16,8 @@ const testimonials = [
   },
   {
     id: 2,
-    quote: '"Finally, an investment platform that delivers what it promises. I\'m thrilled with the results so far!"',
+    quote:
+      '"Finally, an investment platform that delivers what it promises. I\'m thrilled with the results so far!"',
     name: "Senator D.",
     location: "Port Harcourt",
     rating: 2.5,
@@ -33,7 +34,8 @@ const testimonials = [
   },
   {
     id: 4,
-    quote: '"Finally, an investment platform that delivers what it promises. I\'m thrilled with the results so far!"',
+    quote:
+      '"Finally, an investment platform that delivers what it promises. I\'m thrilled with the results so far!"',
     name: "Senator D.",
     location: "Port Harcourt",
     rating: 2.5,
@@ -50,41 +52,47 @@ const testimonials = [
   },
   {
     id: 6,
-    quote: '"Finally, an investment platform that delivers what it promises. I\'m thrilled with the results so far!"',
+    quote:
+      '"Finally, an investment platform that delivers what it promises. I\'m thrilled with the results so far!"',
     name: "Senator D.",
     location: "Port Harcourt",
     rating: 2.5,
     verified: true,
   },
-]
+];
 
 export default function TestimonialsSection() {
   return (
     <section id="testimonials" className="py-20 bg-[#1A2238] text-white">
       <div className="container mx-auto px-6">
         <h2 className="text-2xl font-bold mb-6">Testimonials</h2>
-
-        <div className="flex justify-start mb-12">
+        <div className="flex justify-start mb-10">
           <Button
             variant="outline"
-            className="rounded-full px-8 py-6 h-auto flex items-center gap-2 bg-gray-200 hover:bg-gray-300 text-black"
+            className="rounded-full  flex gap-12 bg-gray-200 hover:bg-gray-300"
           >
-            <span className="font-medium">Our Clients Say</span>
-            <div className="bg-[#1A2238] rounded-full p-2">
-              <ArrowRight className="h-5 w-5 text-white" />
+            <span className="font-bold text-slate-900 ">Our Clients Say</span>
+            <div className="bg-[#1A2238] rounded-full p-3">
+              <ArrowRight className="h-full w-6 text-white" />
             </div>
           </Button>
         </div>
 
-        <h3 className="text-3xl font-bold text-center mb-4">What Clients Say About Us</h3>
+        <h3 className="text-3xl font-bold text-center mb-4">
+          What Clients Say About Us
+        </h3>
         <p className="text-center max-w-3xl mx-auto mb-12 text-gray-300">
-          Our latest transaction highlights our commitment to excellence and innovation. We successfully completed this
-          deal with a focus on delivering value and strengthening our partnerships.
+          Our latest transaction highlights our commitment to excellence and
+          innovation. We successfully completed this deal with a focus on
+          delivering value and strengthening our partnerships.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="bg-white rounded-lg p-6 text-black">
+            <div
+              key={testimonial.id}
+              className="bg-white rounded-lg p-6 text-black"
+            >
               <p className="mb-4 text-sm">{testimonial.quote}</p>
               <div className="flex justify-between items-center">
                 <div>
@@ -102,8 +110,8 @@ export default function TestimonialsSection() {
                             i < Math.floor(testimonial.rating)
                               ? "fill-black text-black"
                               : i < testimonial.rating
-                                ? "fill-black text-black opacity-50"
-                                : "text-gray-300"
+                              ? "fill-black text-black opacity-50"
+                              : "text-gray-300"
                           }`}
                         />
                       ))}
@@ -113,7 +121,11 @@ export default function TestimonialsSection() {
                 </div>
                 <div className="relative w-12 h-12 rounded-full overflow-hidden">
                   <Image
-                    src={testimonial.id % 2 === 1 ? "/avatar-1.png" : "/avatar-2.png"}
+                    src={
+                      testimonial.id % 2 === 1
+                        ? "/avatar-1.png"
+                        : "/avatar-2.png"
+                    }
                     alt={`${testimonial.name} avatar`}
                     fill
                     className="object-cover"
@@ -131,5 +143,5 @@ export default function TestimonialsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

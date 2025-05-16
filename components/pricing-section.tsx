@@ -34,7 +34,7 @@ export default function PricingSection() {
 
           <div className="mb-10">
             <Select>
-              <SelectTrigger className="w-full bg-gray-700 border-none h-14 rounded-full">
+              <SelectTrigger className="w-2/3 bg-gray-700 border-none h-14 rounded-full">
                 <SelectValue placeholder="Google Ads" />
               </SelectTrigger>
               <SelectContent>
@@ -51,14 +51,16 @@ export default function PricingSection() {
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-6">
-            <div className="bg-gray-700 rounded-full py-4 px-8 w-full md:w-auto flex-1 text-center">
-              Flat Fee
-            </div>
-            <div className="flex items-center">
-              <Plus className="mx-4" />
-            </div>
-            <div className="bg-gray-700 rounded-full py-4 px-8 w-full md:w-auto flex-1 text-center">
-              % of ad spend
+            <div className="w-2/3 flex ">
+              <div className="bg-gray-700 rounded-full py-4 px-8 w-full md:w-auto flex-1 text-center">
+                Flat Fee
+              </div>
+              <div className="flex items-center">
+                <Plus className="mx-4" />
+              </div>
+              <div className="bg-gray-700 rounded-full py-4 px-8 w-full md:w-auto flex-1 text-center">
+                % of ad spend
+              </div>
             </div>
             <div className="flex items-center">
               <span className="mx-4">=</span>
@@ -67,17 +69,18 @@ export default function PricingSection() {
               Total cost of service
             </div>
           </div>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-10">
-          <div className="md:col-span-3">
-            <div className="bg-gray-700 rounded-full py-4 px-8 w-full text-center">
-              Flat Fee
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-6">
+            <div className="w-2/3 flex ">
+              <div className="bg-gray-700 rounded-full py-4 px-8 w-full md:w-auto flex-1 text-center">
+                Flat Fee
+              </div>
             </div>
-          </div>
-          <div className="md:col-span-1">
-            <div className="bg-gray-700 rounded-full py-4 px-8 w-full text-center">
-              Ad Spend
+            <div className="flex items-center opacity-0">
+              <span className="mx-4">=</span>
+            </div>
+            <div className="bg-gray-700 rounded-full py-4 px-8 w-full md:w-auto flex-1 text-center">
+              Total cost of service
             </div>
           </div>
         </div>
